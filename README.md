@@ -1,3 +1,4 @@
 # Instagram-account-creator
 A fully automated Instagram Account creator 
-# When the repo Hits 10 Stars i will Release it 
+
+add your 5 sim api token and have some fun in the next update their will be proxy and threading and auto follow
