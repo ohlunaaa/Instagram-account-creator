@@ -116,15 +116,15 @@ def gen():
                     }
                     req3 = r.post('https://www.instagram.com/accounts/web_create_ajax/',headers=headers,data=data3)
                     if "That code isn't valid." in req3.text:
-                        print("[!] That code isn't valid")
+                        print("That code isn't valid")
                         exit()
                     elif 'true' in req3.text:
-                        print("[-] Done Created Account")
+                        print("Done Created Account")
                         file = open("accounts.txt","a")
                         file.write(f"{user}:{paas}:{phone}\n")
                         pass
                     elif "checkpoint_required" in req3.text:
-                        print('[!] Done, checkpoint required')
+                        print(' Done')
                         pass
                     else:
                         print(f"Usernam: {user}")
